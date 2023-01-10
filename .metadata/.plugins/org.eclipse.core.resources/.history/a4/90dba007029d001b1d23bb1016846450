@@ -1,0 +1,18 @@
+package lianxi2;
+
+public class Mingganci {
+	String s[];
+	Mingganci(String ss){
+		String regex="发轮功|自由民主论坛|自制手枪";
+		String regexx="\\p{Punct}";//标点符号。
+		if(ss.contains(regex)){
+			s=ss.split(regexx);
+		}
+		else{
+			System.out.println("合法言论");
+		}
+	}
+	public void dealWith(){
+		
+	}
+}

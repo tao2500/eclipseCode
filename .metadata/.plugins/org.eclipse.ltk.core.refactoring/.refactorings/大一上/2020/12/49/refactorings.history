@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;keben.Familiy&apos; to &apos;Family&apos;&#x0D;&#x0A;- Original project: &apos;keben&apos;&#x0D;&#x0A;- Original element: &apos;keben.Familiy&apos;&#x0D;&#x0A;- Renamed element: &apos;keben.Family&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Familiy&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/a&lt;keben{Familiy.java[Familiy" matchStrategy="1" name="Family" qualified="false" references="true" similarDeclarations="false" stamp="1607001420977" textual="false" version="1.0"/>
+</session>

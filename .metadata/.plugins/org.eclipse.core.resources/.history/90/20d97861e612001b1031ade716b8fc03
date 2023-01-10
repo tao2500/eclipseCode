@@ -1,0 +1,24 @@
+package keben;
+import java.util.Scanner;
+public class I {
+    public static void main (String[]args) {
+     Scanner a=new Scanner(System.in);
+     System.out.println("请输入一个数");
+     int b= a.nextInt();
+     int i=1;
+     for(i=1;i<=1000;i++){
+    	 int c=0;
+    	 int d=1;
+    	 for(d=1;d<i;d++){
+    		 if(i%d==0){
+    			 c+=d;
+    	 }
+     }
+     if(c==i) {
+      System.out.println(b+"是完数");
+     }
+      else {System.out.println(b+"不是完数");
+     }
+     }
+    }
+}

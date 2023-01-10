@@ -1,0 +1,33 @@
+package studentAdministration;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sca=new Scanner(System.in);
+		File txt=new File("D:\\3班文档\\学生信息管理系统\\学生信息.txt");
+		RedTxt rt=new RedTxt(txt);
+		System.out.println("欢迎使用学生管理系统！");
+		System.out.println();
+		ArrayList<Student> list=rt.star();
+		System.out.println("按’1‘查询本系统学生数据；按’2‘添加学生；按’3‘删除学生；按’4‘修改学生信息；(按enter确定)");
+		int select=sca.nextInt();
+		switch(select){
+			case 1:
+			int select1=sca.nextInt();Find m=new Find();switch(select1){
+			case 1:String id=sca.next();m.findid(list, id);
+			}
+			case 2:
+			case 3:
+			case 4:	
+		}
+		/*new Add();
+		//WriterTxt a=new WriterTxt(txt,list);
+		
+		m.show(list);
+		*/
+		
+	}
+
+}

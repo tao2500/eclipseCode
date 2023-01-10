@@ -1,0 +1,8 @@
+package lianXi;
+
+public class Son extends Father{
+	void haveBreakfast(String A,String B){
+		System.out.println("³Ô"+A+"³Ô"+B);
+	}
+		
+}

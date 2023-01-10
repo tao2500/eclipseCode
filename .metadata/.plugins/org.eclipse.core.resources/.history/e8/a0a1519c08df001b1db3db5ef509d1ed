@@ -1,0 +1,11 @@
+package studentAdministration;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
+public class Modify {
+	public void Modify(ArrayList<Student> l,int i){
+		Student s=new Student();
+		
+	}
+}

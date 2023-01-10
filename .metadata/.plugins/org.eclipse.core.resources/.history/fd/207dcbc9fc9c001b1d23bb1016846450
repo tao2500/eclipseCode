@@ -1,0 +1,10 @@
+package lianxi2;
+import java.util.*;
+import java.math.*;
+public class Maath {
+	public static void main(String [] args){
+		Scanner s=new Scanner(System.in);
+		System.out.println("请输入一段包含数字的文字");
+		String a=s.next();
+	}
+}

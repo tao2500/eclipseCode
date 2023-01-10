@@ -1,0 +1,19 @@
+package studentAdministration;
+import java.util.Scanner;
+public class Add {
+	Scanner sca=new Scanner(System.in);
+	Student s=new Student();
+	Add(){
+		System.out.println("请输入该学生的id");
+		s.setId(sca.next());
+		System.out.println("请输入该学生的姓名");
+		String b=sca.next();
+		System.out.println("请输入该学生的联系电话");
+		String c=sca.next();
+		System.out.println("请输入该学生的宿舍号");
+		String d=sca.next();
+		System.out.println("请输入该学生的班级");
+		String e=sca.next();
+	}
+	
+}

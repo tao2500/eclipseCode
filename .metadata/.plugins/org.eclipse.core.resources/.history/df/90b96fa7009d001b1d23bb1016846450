@@ -1,0 +1,11 @@
+package lianxi2;
+
+public class Mingganci {
+	String s[];
+	Mingganci(String ss){
+		
+	}
+	public void dealWith(){
+		String sss=
+	}
+}

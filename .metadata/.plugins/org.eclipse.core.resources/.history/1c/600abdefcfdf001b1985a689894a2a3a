@@ -1,0 +1,13 @@
+package studentAdministration;
+
+import java.util.ArrayList;
+
+public class Delete {
+	public ArrayList<Student> Delete(ArrayList<Student> l,int i){
+		++i;
+		l.remove(i);
+		System.out.println("É¾³ý³É¹¦£¡");
+		return l;
+	}
+}
+

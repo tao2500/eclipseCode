@@ -1,0 +1,14 @@
+package lianlianshou;
+
+public class test extends A {
+	public int getNum(int a){
+		return a+100;
+	}
+	
+	public static void main (String [] args){
+		A a=new A();
+		System.out.println(a.getNum(10));
+		a=new test();
+		System.out.print(a.getNum(10));
+	}
+}

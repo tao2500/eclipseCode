@@ -1,0 +1,80 @@
+package osThree;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.Semaphore;
+public class modifyT7 {
+	public static void main(String[] args) {
+		Shop shop = new Shop();
+	    Producer pro = new Producer(shop);
+	    Cousumer cou = new Cousumer(shop);
+	    new Thread(pro).start();
+	    new Thread(cou).start();
+	}
+}
+
+class Product {
+
+  
+}
+
+class Shop {
+	Semaphore t = new Semaphore(10); //可供发出的许可数为10
+	public synchronized  void  produ() {
+		try {
+			Thread.sleep(3000);
+			t.release();
+		} catch (InterruptedException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		} //V
+		
+		System.out.println("producing"  );//生产
+//		System.out.println("amount of product is " + list.size()); //产品数量
+    }
+    
+	public synchronized void cousu() {
+		try {
+			t.acquire();//P
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		}
+        System.out.println("comsuming" );//消费
+//        System.out.println("amount of product is " + t.availablePermits());
+    }
+}
+
+class Cousumer implements Runnable {
+	private Shop shop;
+	public Cousumer(Shop shop){
+		this.shop = shop;
+    }
+	public void run() {
+		while (true) {
+			try {
+				Thread.sleep(1000);
+				shop.cousu();
+			}
+			catch(Exception e)
+			{e.printStackTrace();}
+        }
+    }
+}
+
+class Producer implements Runnable {
+	private Shop shop;
+	public Producer(Shop shop) {
+		this.shop = shop;
+	}
+	public void run() {
+        while (true) {
+            try {
+            	Thread.sleep(1000);
+            	shop.produ();
+            }
+            catch(Exception e)
+            {e.printStackTrace();}
+        }
+    }
+}

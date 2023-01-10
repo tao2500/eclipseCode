@@ -1,0 +1,25 @@
+package studentAdministration;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Find {
+	public void findid(ArrayList<Student> l,String id){//°´Ñ§ºÅ²é
+		Iterator<Student> iter=l.iterator();
+		while(iter.hasNext()){
+			Student s=iter.next();
+			if(s.getId().equals(id)){
+				System.out.println(s.getId()+", "+s.getMane()+", "+s.getCallphonenumber()+", "+s.getDormitorynumber()+", "+s.getClassnumber());
+				break;
+			}
+		}
+	}
+	public void show(ArrayList<Student> l){
+		Student s=new Student();
+		Iterator<Student> iter=l.iterator();
+		while(iter.hasNext()){
+			s=iter.next();
+			System.out.println(s.getId()+", "+s.getMane()+", "+s.getCallphonenumber()+", "+s.getDormitorynumber()+", "+s.getClassnumber());
+		}
+	}
+}

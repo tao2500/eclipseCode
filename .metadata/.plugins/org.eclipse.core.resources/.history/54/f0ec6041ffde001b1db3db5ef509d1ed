@@ -1,0 +1,5 @@
+package studentAdministration;
+import java.util.Scanner;
+public class Add {
+	Scanner sca=new Scanner(System.in);
+}

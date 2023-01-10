@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;daer&apos; to &apos;sQL_DBUtil&apos;&#x0D;&#x0A;- Original project: &apos;JAVA8_MySql&apos;&#x0D;&#x0A;- Original element: &apos;JAVA8_MySql/src/daer&apos;&#x0D;&#x0A;- Renamed element: &apos;JAVA8_MySql/src/sQL_DBUtil&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;daer&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;daer" name="sQL_DBUtil" qualified="false" references="true" stamp="1637398156499" textual="false" version="1.0"/>
+</session>

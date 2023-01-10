@@ -1,0 +1,33 @@
+package studentAdministration;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.*;
+
+public class RedTxt{
+	RedTxt(){
+		
+	}
+	RedTxt(File f){
+		ArrayList<Student> list=new ArrayList<Student>();
+		try {
+			BufferedReader redtxt=new BufferedReader(new FileReader(f));
+			//System.out.println("这是一个文件");
+			String content=redtxt.readLine();
+			while(content!=null){
+				String a=redtxt.readLine();
+				System.out.println(content);
+				redtxt.readLine();
+			}
+		} catch (FileNotFoundException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		}
+	}
+}

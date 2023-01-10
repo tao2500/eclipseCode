@@ -1,0 +1,16 @@
+package class_one;
+
+import java.util.List;
+
+public class Josephus {
+	Josephus(int a,int b,int c){
+		if(a<=0||b<0||b>=a||c<=0||c>=a){
+			throw new IllegalArgumentException("n="+a+"staar="+b+"distance"+c);
+		}
+	}
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+
+	}
+
+}

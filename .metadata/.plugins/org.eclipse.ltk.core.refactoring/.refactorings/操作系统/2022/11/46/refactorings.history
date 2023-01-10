@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;t7.java&apos; to &apos;操作系统/src/osThree&apos;&#x0D;&#x0A;- Original project: &apos;操作系统&apos;&#x0D;&#x0A;- Destination element: &apos;操作系统/src/osThree&apos;&#x0D;&#x0A;- Original element: &apos;osThree.t7.java&apos;" description="Copy compilation unit" destination="/src&lt;osThree" element1="/src&lt;osThree{t7.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1667738483961" units="1" version="1.0"/>
+</session>

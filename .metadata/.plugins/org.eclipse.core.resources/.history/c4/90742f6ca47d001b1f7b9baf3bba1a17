@@ -1,0 +1,23 @@
+package lianXi;
+import java.util.Scanner;
+class Test {
+	public static void main (String [] args){
+		Teacher a=new Teacher();
+		Student b=new Student();
+
+		System.out.println("请分别输入该人员的姓名，学号/工号，院校/部门");
+		
+		System.out.println("该教师的姓名为%s"+a.name);
+		System.out.println("该教师的工号为%d"+a.ID);
+		System.out.println("该教师所在的部门为%s"+a.branch);
+		System.out.println("该教师能借的书本数为%d"+a.sum);
+		System.out.println("该教师借书的期限为%d天"+a.time);
+		
+		System.out.println("该学生的姓名为%s"+b.name);
+		System.out.println("该学生的学号为%d"+b.ID);
+		System.out.println("该学生所在的院校为%s"+b.branch);
+		System.out.println("该学生能借的书本数为%d"+b.sum);
+		System.out.println("该学生借书的期限为%d天"+b.time);
+	}
+
+}

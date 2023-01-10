@@ -1,0 +1,34 @@
+package class_one;
+
+public class JosephusNoDe {
+	JosephusNoDe(int n,int start,int distance){
+		if(n<=0||start<0||start>=n||distance<=0||distance>=n) {
+			throw new IllegalArgumentException("n="+n+",start="+start+",distance="+distance);
+		}
+		System.out.print("Josephus("+n+","+start+","+distance+")  ");
+		NoDe<String> old=new NoDe<String>((char)('A')+"",null);
+		NoDe<String> head=old;
+		for(int i=1;i<n;i++){
+			NoDe<String> nee=new NoDe<String>((char)('A'+i)+"",null);
+			old.next=nee;
+			//System.out.println("运行成功");
+			old=nee;
+		}
+		old.next=head;
+		System.out.println(head.toString());
+		while(n>1) {
+			start=(start+distance-1)%n;
+			
+			
+			System.out.println("删除"+head.remove(start)+","+head.toString());
+			n--;
+			System.out.println("此时删除"+start+"此时n="+n);
+		}
+		System.out.println("被赦免是"+head.data);
+		}
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		new JosephusNoDe(10,0,3);
+	}
+
+}

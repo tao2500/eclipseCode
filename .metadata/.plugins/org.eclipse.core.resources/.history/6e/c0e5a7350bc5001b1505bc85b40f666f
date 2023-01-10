@@ -1,0 +1,7 @@
+package lianlianshou;
+
+public class A {
+	public int getNum(int a){
+		return a+1;
+	}
+}

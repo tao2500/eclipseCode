@@ -1,0 +1,14 @@
+package studentAdministration;
+import java.io.*;
+import java.util.ArrayList;
+public class Main {
+
+	public static void main(String[] args) {
+		File txt=new File("D:\\3班文档\\学生信息管理系统\\学生信息.txt");
+		RedTxt rt=new RedTxt(txt);
+		ArrayList<Student> list=rt.star();
+		
+		WriterTxt a=new WriterTxt(txt,list);
+	}
+
+}

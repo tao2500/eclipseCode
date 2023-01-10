@@ -1,0 +1,32 @@
+package keben;
+import java.util.Scanner;
+public class H {
+    public static void main (String[]args) {
+     int number=0,d5,d4,d3,d2,d1; 
+     Scanner reader=new Scanner(System.in);
+     System.out.println("请输入一个1~99999之间的数");
+     number=reader.nextInt();
+     if(number>=10000) {
+           d5 = number/10000;
+           d4 = number/1000%10;
+           d3 = number/100%100%10;
+           d2 = number/10%1000%100%10;
+           d1 = number%10;
+           if(number>=10000) {
+               System.out.println(number+"是五位数");
+               if(d1==d5) {
+                  if(d2==d4) {
+                 System.out.println(number+"是回文数");
+                }
+               }
+                else {System.out.println(number+"不是回文数");
+                }
+                }
+    }
+}
+}
+
+    
+
+    
+  

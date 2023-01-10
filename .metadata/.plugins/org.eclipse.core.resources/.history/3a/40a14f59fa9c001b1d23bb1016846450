@@ -1,0 +1,11 @@
+package lianxi2;
+
+public class Mingganci {
+	char s[];
+	Mingganci(String ss){
+		char s[]=ss.toCharArray();
+	}
+	public void dealWith(){
+		
+	}
+}

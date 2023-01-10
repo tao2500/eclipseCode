@@ -1,0 +1,59 @@
+package io;
+import java.io.*;
+public class CopyPic {
+	int a;
+	String srcPath;
+	String dstPath;
+	void CopyPic(){
+	}
+	void CopyPic(String stcPath,String dstPath){
+		this.srcPath=stcPath;
+		this.dstPath=dstPath;
+	}
+	File src=new File(srcPath); 
+	File dst=new File(dstPath);
+	int detect(){
+		if(src.exists()&&dst.isDirectory()){
+			return 1;
+		}
+		else{
+			return 0;
+		}
+	}
+	void copy(){
+		
+		if(this.detect()==1){
+			try{
+				FileInputStream in= new FileInputStream(srcPath);
+				a=in.read();
+				in.close();
+			}
+			catch(IOException e){
+				System.out.println("inputException");
+			}  //创建输入流
+			try{
+				FileOutputStream out=new FileOutputStream("D:\\javacopytest\\aim\\aim.png");
+				out.write(a);
+				out.close();
+			}
+			catch(IOException e){
+				System.out.println("outException");
+			}  //创建输出流
+			 
+		}
+		
+		
+	}
+}
+
+class Test {
+	public static void main(String[] args) {
+		CopyPic copypic=new CopyPic(srcPath, dstPath);
+		String srcPath="D:\\javacopytest\\source.png";//源文件
+		System.out.println("outException"+srcPath);
+		String dstPath="D:\\javacopytest\\aim";//目的文件
+		copypic.CopyPic(srcPath, dstPath);
+		copypic.copy();
+	}
+}
+

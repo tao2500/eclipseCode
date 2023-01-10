@@ -1,0 +1,6 @@
+package lianlianshou;
+
+public abstract class abstracttest {
+	int add();
+	
+}

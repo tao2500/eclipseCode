@@ -1,0 +1,9 @@
+package class_one;
+public class Josephus {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package lianXi;
+
+public class Ceshilei {
+	public static void main(String [] args){
+		Son q=new Son();
+		super("包子","馒头");
+		q.haveBreakfast("包子","自助餐");
+		
+		
+	}
+}

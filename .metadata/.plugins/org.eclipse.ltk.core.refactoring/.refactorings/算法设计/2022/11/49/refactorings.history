@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;回溯n皇后.Solution.java&apos; to &apos;Queen.java&apos;&#x0D;&#x0A;- Original project: &apos;算法设计&apos;&#x0D;&#x0A;- Original element: &apos;回溯n皇后.Solution.java&apos;&#x0D;&#x0A;- Renamed element: &apos;回溯n皇后.Queen.java&apos;" description="Rename compilation unit &apos;Solution.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;回溯n皇后{Solution.java" name="Queen.java" references="false" stamp="1669636561038" version="1.0"/>
+</session>

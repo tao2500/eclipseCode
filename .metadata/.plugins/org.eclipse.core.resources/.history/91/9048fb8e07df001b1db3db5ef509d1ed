@@ -1,0 +1,15 @@
+package studentAdministration;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Find {
+	public int findid(ArrayList<Student> l,String id){//°´Ñ§ºÅ²é
+		Iterator<Student> iter=l.iterator();
+		while(iter.hasNext()){
+			Student s=iter.next();
+			
+		}
+		return 0;
+	}
+}

@@ -1,0 +1,20 @@
+package studentAdministration;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sca=new Scanner(System.in);
+		File txt=new File("D:\\3班文档\\学生信息管理系统\\学生信息.txt");
+	/*	RedTxt rt=new RedTxt(txt);
+		ArrayList<Student> list=rt.star();
+		//new Add();
+		//WriterTxt a=new WriterTxt(txt,list);
+		Find m=new Find();
+		m.show(list);
+		*/
+		
+	}
+
+}

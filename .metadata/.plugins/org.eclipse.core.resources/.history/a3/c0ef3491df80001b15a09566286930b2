@@ -1,0 +1,8 @@
+package lianXi;
+
+public class Father {
+	Father(String A,String B){
+		System.out.println("°Ö°Ö³Ô"+A+"³Ô"+B);
+		
+	}
+}

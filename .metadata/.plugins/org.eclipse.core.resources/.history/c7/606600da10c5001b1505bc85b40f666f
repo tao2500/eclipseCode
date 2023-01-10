@@ -1,0 +1,23 @@
+package lianlianshou;
+
+public class test extends A {
+	Double f(double a,double b){
+	double m=super.f(a, b);	
+		return m+a*b;
+	}
+	
+	static int g (int n ){
+		int m=A.g(n);
+		return m+n;
+	}
+	
+	public static void main (String [] args){
+		System.out.println(oo);
+		test n=new test();
+		System.out.println(n.f(10.0, 8.0));
+		System.out.println(n.g(3));
+		A a=new test();
+		System.out.println(a.f(10.0, 8.0));
+		System.out.print(a.g(3));
+	}
+}

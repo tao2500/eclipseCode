@@ -1,0 +1,10 @@
+package studentAdministration;
+
+import java.util.ArrayList;
+
+public class Find {
+	public int findid(ArrayList<Student> l,String id){
+		
+		return 0;
+	}
+}

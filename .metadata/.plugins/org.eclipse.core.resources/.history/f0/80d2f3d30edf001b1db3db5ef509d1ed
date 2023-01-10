@@ -1,0 +1,27 @@
+package studentAdministration;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Find {
+	public void findid(ArrayList<Student> l,String id){//按学号查
+		System.out.println("学号为"+id+"的学生的信息如下：")
+		Iterator<Student> iter=l.iterator();
+		while(iter.hasNext()){
+			Student s=iter.next();
+			if(s.getId().equals(id)){
+				System.out.println(s.getId()+", "+s.getMane()+", "+s.getCallphonenumber()+", "+s.getDormitorynumber()+", "+s.getClassnumber());
+				break;
+			}
+		}
+	}
+	public void show(ArrayList<Student> l){
+		System.out.println("本系统所有学生信息如下：");
+		Student s=new Student();
+		Iterator<Student> iter=l.iterator();
+		while(iter.hasNext()){
+			s=iter.next();
+			System.out.println(s.getId()+", "+s.getMane()+", "+s.getCallphonenumber()+", "+s.getDormitorynumber()+", "+s.getClassnumber());
+		}
+	}
+}

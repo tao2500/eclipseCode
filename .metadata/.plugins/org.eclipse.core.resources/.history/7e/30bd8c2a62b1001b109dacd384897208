@@ -1,0 +1,16 @@
+package webBianCheng;
+	import java.net.*;
+public class P398 {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		try{
+		InetAddress add=InetAddress.getByName("https://www.w3school.com.cn");
+		System.out.println(add);
+		}
+		catch(UnknownHostException e){
+			e.printStackTrace();
+		}
+	}
+
+}

@@ -1,0 +1,13 @@
+package lianlianshou;
+
+public class A {
+	Double f(double a,double b){
+		return a+b;
+	}
+	
+	 int g (int n ){
+		return n*n;
+	}
+	int o=100;
+	static double oo=100.00;
+}

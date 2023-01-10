@@ -1,0 +1,34 @@
+package studentAdministration;
+
+import java.io.*;
+import java.util.*;
+
+public class WriterTxt {
+	Student s=new Student();
+	WriterTxt(){
+	}
+	WriterTxt(File f){
+		s.setCallphonenumber("13138047288");
+		s.setClassnumber("3");
+		s.setDormitorynumber("202010098222");
+		s.setId("36");
+		s.setMane("热心市民");
+		try {
+			BufferedWriter writxt=new BufferedWriter(new FileWriter(f));
+			try {
+				
+			} catch (InterruptedException e) {
+				// TODO 自动生成的 catch 块
+				e.printStackTrace();
+			};
+
+		} catch (FileNotFoundException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		}
+
+	}
+}

@@ -1,0 +1,39 @@
+package webBianCheng;
+	import java.net.*;
+	import java.io.*;
+public class P396 {
+	static URL url;
+	P396(){
+		
+	}
+	P396 (URL url){
+		this.url=url;
+	}
+	
+	void printt(){
+		byte[]b=new byte[1000];
+		int num;
+		try{
+			url=new URL("https://www.w3school.com.cn");
+			InputStream in=url.openStream();
+			while((num=in.read(b, 0, 1000))!=-1){
+				String s=new String(b,0,num,"utf_8");
+				System.out.println(s);
+			}
+			in.close();
+		}
+		catch(MalformedURLException e){
+			e.printStackTrace();
+		}
+		catch(IOException e){
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public static void main(String []args){
+		P396 P=new P396();
+		P.printt();
+		
+	}
+}

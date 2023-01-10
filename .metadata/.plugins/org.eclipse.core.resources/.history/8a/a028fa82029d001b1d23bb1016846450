@@ -1,0 +1,10 @@
+package lianxi2;
+import java.util.*;
+public class Test {
+	public static void main(String [] args){
+		Mingganci a=new Mingganci();
+		Scanner s=new Scanner(System.in);
+		System.out.println("请输入一段可能含有敏感词的文字");
+		String ss=s.nextLine();
+	}
+}

@@ -1,0 +1,31 @@
+package webBianCheng;
+	import java.net.*;
+	import java.io.*;
+public class P396 {
+	static URL url;
+	P396(){
+		
+	}
+	P396 (URL url){
+		this.url=url;
+	}
+	
+	void printt(){
+		try{
+			url=new URL(url);
+			InputStream in=url.openStream();
+		}
+		catch(MalformedURLException e){
+			e.printStackTrace();
+		}
+		catch(IOException e){
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public static void main(String []args){
+		P396=new P396();
+		
+	}
+}

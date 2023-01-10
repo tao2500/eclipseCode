@@ -1,0 +1,21 @@
+package lianxi2;
+import java.util.*;
+import java.math.*;
+public class Maath {
+	public static void main(String [] args){
+		double sum=0,item=0,valu=0;
+		boolean boo=true;
+		for(String s:args)
+			try{
+				item=Double.parseDouble(s);
+				sum+=item;
+			}
+		catch(NumberFormatException e){
+			boo=false;
+		}
+		System.out.println();
+		System.out.println("这些数字的和为："+sum);
+		valu=sum/args.length;
+		System.out.println("这些数字的平均值为："+valu);
+	}
+}

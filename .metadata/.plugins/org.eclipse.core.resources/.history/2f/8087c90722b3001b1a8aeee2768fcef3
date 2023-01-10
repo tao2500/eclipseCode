@@ -1,0 +1,38 @@
+package webBianCheng;//客户端；客户端为本包Taojiezi
+import java.io.*;
+import java.net.*;
+import java.util.*;
+public class P400 {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		try {
+			System.out.println("客户端发起请求");
+			Socket client=new Socket("ip",6000);
+			System.out.println("客户端请求发送成功");
+			InetAddress address=client.getInetAddress();//获取服务器地址
+			System.out.println(address.toString());//输出服务器地址
+			OutputStream os=client.getOutputStream();//创建输出字符流
+			OutputStreamWriter osw=new OutputStreamWriter(os);//字符流转字节流
+			BufferedWriter bw =new BufferedWriter(osw);
+			Scanner in=new Scanner(System.in);//输入两遍才行
+			String content=in.next();
+			while(!content.equals("exit")){
+				bw.write(content);
+				bw.newLine();//换行
+				bw.flush();//清内存
+				content=in.next();
+			}
+			bw.close();
+			client.close();
+		} catch (UnknownHostException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		}
+
+	}
+
+}

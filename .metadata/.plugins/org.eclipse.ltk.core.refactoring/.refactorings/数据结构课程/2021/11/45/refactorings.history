@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;class_one.Pyramid&apos; to &apos;循环金字塔&apos;&#x0D;&#x0A;- Original project: &apos;数据结构课程&apos;&#x0D;&#x0A;- Original element: &apos;class_one.Pyramid&apos;&#x0D;&#x0A;- Renamed element: &apos;class_one.循环金字塔&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Pyramid&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;class_one{Pyramid.java[Pyramid" matchStrategy="1" name="循环金字塔" qualified="false" references="true" similarDeclarations="false" stamp="1635947365507" textual="false" version="1.0"/>
+</session>

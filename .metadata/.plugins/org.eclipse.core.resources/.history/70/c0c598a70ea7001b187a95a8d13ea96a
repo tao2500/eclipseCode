@@ -1,0 +1,13 @@
+package io;
+
+public class Test {
+
+	public static void main(String[] args) {
+		CopyPic copypic=new CopyPic();
+		String srcPath="D:\\javacopytest\\source.png";//源文件
+		String dstPath="D:\\javacopytest\\aim";//目的文件
+		copypic.Copypic(srcPath, dstPath);
+		copypic.copy();
+	}
+
+}

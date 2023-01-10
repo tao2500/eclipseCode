@@ -1,0 +1,21 @@
+package studentAdministration;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
+public class Modify {
+	public void Modify(ArrayList<Student> l,int i){
+		Scanner sca=new Scanner(System.in);
+		Student s=new Student();
+		System.out.println("请输入修改后学生的id");
+		s.setId(sca.next());
+		System.out.println("请输入修改后学生的姓名");
+		s.setMane(sca.next());
+		System.out.println("请输入修改后学生的联系电话");
+		s.setCallphonenumber(sca.next());
+		System.out.println("请输入修改后学生的宿舍号");
+		s.setClassnumber(sca.next());
+		System.out.println("请输入修改后学生的班级");
+		s.setClassnumber(sca.next());
+	}
+}

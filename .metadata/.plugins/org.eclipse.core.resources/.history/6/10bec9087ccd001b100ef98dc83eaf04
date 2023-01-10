@@ -1,0 +1,16 @@
+package lianxi3;
+import java.io.*;
+public class ≤‚ ‘ extends Exception{
+	int m;
+	≤‚ ‘ (int m){
+		this.m=m;
+	}
+	int get(){
+		return m;
+	}
+}
+
+class teacher{
+	
+}
+
